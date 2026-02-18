@@ -1,1 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  --color-black:         #000000;
+  --color-md-black:      #222222;
+  --color-dark-gray:     #9C9C9C;
+  --color-light-gray:    #f5f5f5;
+  --color-brown:         #995c00;
+
+  --font-geist:       "Geist Mono", monospace;
+  --font-inter:       "Inter", sans-serif;
+}
+
+@layer base {
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+
+  body {
+    font-family: var(--font-inter)
+  }
+}
+
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between;
+  }
+
+  .grid-center {
+    @apply grid place-items-center;
+  }
+
+  .transition-300 {
+    @apply transition-all ease-in-out duration-300;
+  }
+
+
+  .size-full {
+    @apply h-full w-full;
+  }
+
+
+  .shadow-left {
+    box-shadow: -6px 0 10px -10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative after:content-[""] after:absolute after:w-0 after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:h-[0.25px] after:bg-black;
+  }
+
+  .button-icon {
+    @apply h-12 w-12 rounded-full grid place-items-center bg-white hover:bg-light-gray;
+  }
+
+  .primary-btn {
+    @apply bg-black rounded-full grid place-items-center h-12 px-6 text-white font-medium hover:bg-md-black;
+  }
+}
