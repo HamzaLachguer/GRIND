@@ -1,16 +1,17 @@
-import React from 'react'
 import WhiteButton from '../../../components/ui/buttons/WhiteButton'
 
 const Hero = () => {
   return (
-    <div
+    <section
       className="relative px-5 md:px-8 lg:px-12 pb-[70px] lg:pb-8 h-[calc(100vh-80px)]"
     >
       <div className="relative w-full h-full overflow-hidden">
-        <img
+        <video
           className="h-full w-full object-center object-cover" 
-          src="https://hips.hearstapps.com/hmg-prod/images/sweaty-black-athlete-doing-sit-ups-in-a-gym-royalty-free-image-1591197876.jpg?crop=1.00xw:1.00xh;0,0" 
-          alt="" 
+          src="https://framerusercontent.com/assets/vHlfI7YxFFfX18h0w5CJhvRoi3A.mp4"  
+          loop
+          autoPlay
+          muted
         />
 
         <div 
@@ -40,7 +41,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
