@@ -25,7 +25,8 @@ const Header = () => {
   const resetUI = () => setActivePanel(null)
 
   return (
-    <header className={clsx("mb-2 fixed z-50 top-0 w-full left-0 pl-5 md:pl-8 lg:pl-12 bg-white"
+    <header className={clsx(
+      "mb-2 pl-5 md:pl-8 lg:pl-12 bg-white"
     )}>
       {/* for Desktop */}
       <div className="h-20 flex items-center justify-between">
@@ -43,7 +44,7 @@ const Header = () => {
       </div>
       {/* Mobile Nav */}
 
-      <div className="fixed flex items-center bottom-0 left-0 w-full z-0 bg-white h-15.5 lg:hidden">
+      <div className="fixed flex items-center bottom-0 left-0 w-full z-30 bg-white h-15.5 lg:hidden">
 
         <MobileNav 
           isCartOpen={isCartOpen} 

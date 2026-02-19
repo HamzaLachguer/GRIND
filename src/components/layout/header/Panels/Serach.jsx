@@ -114,7 +114,7 @@ const Search = ({state, setState}) => {
       aria-label="search containner"
       aria-hidden={state}
       className={clsx(
-        "fixed size-full top-0 pt-0 right-0 flex justify-end",
+        "fixed size-full z-40 top-0 pt-0 right-0 flex justify-end",
         state ? "pointer-events-auto" : "pointer-events-none"
       )}
       onClick={() => setState(false)}
@@ -183,7 +183,11 @@ const Search = ({state, setState}) => {
       <button 
         type="button"
         aria-label="close search"
-        className="absolute bottom-5 right-5 flex items-center justify-center text-xl h-12 w-12 bg-black rounded-full text-white lg:hidden"
+        aria-hidden={state}
+        className={clsx(
+          "absolute bottom-5 right-5 items-center justify-center text-xl h-12 w-12 bg-black rounded-full text-white lg:hidden",
+          state ? "flex" : "hidden"
+        )}
         onClick={() => setState(false)}
       >
         <i className="ri-close-large-fill" aria-hidden="true"></i>

@@ -18,7 +18,7 @@ const CartPage = ({state, setState, resetUI}) => {
       aria-label="cart page"
       aria-hidden={state}
       className={clsx(
-        "fixed size-full top-0 pt-0 right-0 flex justify-end",
+        "fixed z-20 size-full top-0 pt-0 right-0 flex justify-end",
         state ? "pointer-events-auto" : "pointer-events-none"
       )}
       onClick={() => setState(false)}
@@ -58,14 +58,7 @@ const CartPage = ({state, setState, resetUI}) => {
       </div>
 
       {/* Close button */}
-      <button 
-        type="button"
-        aria-label="close search"
-        className="absolute bottom-5 right-5 flex items-center justify-center text-xl h-12 w-12 bg-black rounded-full text-white lg:hidden"
-        onClick={() => setState(false)}
-      >
-        <i className="ri-close-large-fill" aria-hidden="true"></i>
-      </button>
+      
 
     </div>
   )

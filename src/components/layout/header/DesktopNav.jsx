@@ -8,8 +8,8 @@ import { navLinks } from "../../../lib/contants";
 const DesktopNav = ({isCartOpen, isSearchOpen, setActivePanel}) => {
   return (
       <div className={clsx(
-        "hidden lg:flex justify-between items-center w-[846px] h-20 px-5 md:px-8 lg:px-12",
-        (isSearchOpen || isCartOpen) && "absolute z-50 right-0 bg-white"
+        "hidden lg:flex justify-between items-center w-[846px] h-20 px-5 md:px-8 lg:px-12 absolute z-50 right-0 bg-white",
+        (isSearchOpen || isCartOpen) && ""
         )}
       >
       <nav>
