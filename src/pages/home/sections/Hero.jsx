@@ -3,7 +3,7 @@ import WhiteButton from '../../../components/ui/buttons/WhiteButton'
 const Hero = () => {
   return (
     <section
-      className="relative px-5 md:px-8 lg:px-12 pb-[70px] lg:pb-8 h-[calc(100vh-80px)]"
+      className="relative px-5 md:px-8 lg:px-12 pb-[70px] lg:pb-8 h-[calc(100svh-80px)]"
     >
       <div className="relative w-full h-full overflow-hidden">
         <video
@@ -12,6 +12,9 @@ const Hero = () => {
           loop
           autoPlay
           muted
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
         />
 
         <div 
@@ -36,8 +39,12 @@ const Hero = () => {
           <div 
             className="flex gap-4"
           >
-            <WhiteButton>Shop women's</WhiteButton>
-            <WhiteButton>Shop men's</WhiteButton>
+            <WhiteButton 
+              ariaLabel="shop women's collection"
+            >Shop women's</WhiteButton>
+            <WhiteButton 
+              ariaLabel="shop men's collection"
+            >Shop men's</WhiteButton>
           </div>
         </div>
       </div>

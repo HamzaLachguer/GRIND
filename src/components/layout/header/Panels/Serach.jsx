@@ -122,7 +122,7 @@ const Search = ({state, setState}) => {
 
       <div 
         ref={drawerRef}
-        className="w-full h-screen lg:max-w-[846px] bg-white px-5 py-10 lg:pt-25 overflow-auto flex flex-col shadow-left"
+        className="w-full h-screen lg:max-w-[846px] bg-white px-5 md:px-8 lg:px-10 py-10 lg:pt-25 overflow-auto flex flex-col shadow-left"
         onClick={(e) => e.stopPropagation()}
       >
         <form className="relative" action="" method="post">

@@ -1,7 +1,8 @@
-const WhiteButton = ({ children }) => {
+const WhiteButton = ({ children, ariaLabel }) => {
   return (
     <button
       type="button"
+      aria-label={ariaLabel}
       className="bg-white font-medium leading-5 rounded-full py-3.5 px-6 hover:bg-light-gray transition-300"
     >{children}</button>
   )

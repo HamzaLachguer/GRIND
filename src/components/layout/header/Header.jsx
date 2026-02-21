@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header className={clsx(
-      "mb-2 pl-5 md:pl-8 lg:pl-12 bg-white"
+      "mb-2 pl-5 md:pl-8 lg:pl-10 bg-white"
     )}>
       {/* for Desktop */}
       <div className="h-20 flex items-center justify-between">
