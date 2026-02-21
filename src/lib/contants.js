@@ -2,6 +2,7 @@ export const navLinks = [
   {
     id: "link-001",
     title: "shop",
+    path: "/shop",
     subNav: [
       {
         id: "shop-subLink-001",
