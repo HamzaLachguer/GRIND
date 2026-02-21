@@ -8,7 +8,7 @@ const MobileMenu = ({isMenuOpen}) => {
   return (
     <div 
         id="main-navigation"
-        className={`absolute z-50 h-[calc(100vh-140px)] w-screen bg-white ${isMenuOpen? "flex flex-col justify-between" : "hidden"} top-20 left-0 px-5 py-10 sm:px-8 lg:hidden`}
+        className={`fixed z-50 h-[calc(100vh-62px)] w-screen bg-white ${isMenuOpen? "flex flex-col justify-between" : "hidden"} top-0 left-0 px-5 py-10 sm:px-8 lg:hidden`}
         aria-hidden={!isMenuOpen}
       >
         <nav>
